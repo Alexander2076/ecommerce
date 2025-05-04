@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!--seccion del nav-->
+    <nav class="nav">
+        <h1 class="nav-logo">Logo</h1>
+        <ul class="nav-list">
+            <li class="list-item">Inicio</li>
+            <li class="list-item item-primary">Tienda</li>
+            <li class="list-item">Ayuda</li>
+            <li class="list-item">Sobre Nosotros</li>
+        </ul>
+        <span class="material-symbols-outlined" id="icono">
+            shopping_cart
+            <div class="contadorIcono">0</div>
+        </span>
+    </nav>
+
+
+
+    <!--seccion de la tienda-->
+
+    <main class="tienda-container">
+
+        <aside class="aside">
+            <h3 class="titulo-aside">Tienda Online</h3>
+        </aside>
+
+        <section class="tienda-principal">
+            <div class="producto" >
+                <div class="producto-img" id="hidrolavadora">
+                    <img src="img/productos/hidrolavadora.jpg">
+                </div>
+                <div class="producto-info" >
+                    <h4 class="producto-titulo">Hidrolavadora Portatil</h4>
+                    <p class="producto-precio">$200000</p>
+                    <div class="producto-buttons">
+                        <input class="button" type="submit" id="comprar" value="Comprar">
+                        <input class="button button-agregar" type="submit" id="agregar" value="Agregar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-img">
+                    <img src="img/productos/organizador.jpg">
+                </div>
+                <div class="producto-info">
+                    <h4 class="producto-titulo">Organizador</h4>
+                    <p class="producto-precio">$19000</p>
+                    <div class="producto-buttons">
+                        <input class="button" type="submit" id="comprar" value="Comprar">
+                        <input class="button button-agregar" type="submit" id="agregar" value="Agregar">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--seccion del carrito-->
+
+    <section id="carrito">
+        <span class="vacio">carrito vacio</span>
+
+        <div id="productosContainer"></div>
+
+        <span class="contador">total de productos: 0</span>
+        <span class="precioTotal">precio total: $0</span>
+        <button id="comprarBtn">comprar <span class="material-symbols-outlined" id="lock">lock</span></button>
+    </section>
+
+
+    <!--seccion de la pantalla de pago-->
+    <section class="pantalla-pago" id="pantallaDePago">
+        <div class="container">
+            <div class="tarjeta-container">
+                <div class="tarjeta delante">
+
+
+
+
+                    <div class="img-container">
+                        <img src="" id="img">
+                    </div>
+                    <div class="chip-container">
+                        <img src="img/chip-tarjeta.png">
+                    </div>
+                    <div class="numero">
+                        <p class="parrafo">Número de la Tarjeta</p>
+                        <p class="parrafo-2" id="numeroParrafo">#### #### #### ####</p>
+                    </div>
+                    <div class="flex-container">
+                        <div class="nombre">
+                            <p class="parrafo">Nombre Completo</p>
+                            <p class="parrafo-2" id="nombreParrafo">Jhon Doe</p>
+                        </div>
+                        <div class="fecha">
+                            <p class="parrafo">Vto</p>
+                            <p class="parrafo-2" id="fechaParrafo">DD/MM/AA</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="tarjeta detras">
+                    <div class="container">
+                        <div class="cinta">
+
+                        </div>
+                        <div class="firma-container">
+
+                            <div class="firma">
+                                <p>Firma</p>
+                            </div>
+
+                            <div class="cvv-container">
+                                <p>Cvv</p>
+                                <p id="cvvParrafo">ej: 476</p>
+                            </div>
+                        </div>
+                        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <span id="desplegar">
+                <div class="desplegar-item"></div>
+            </span>
+
+
+            <div class="formulario-container ">
+
+
+
+                <form class="formulario">
+                    <input type="text" placeholder="Número de la tajeta" id="numero" maxlength="16">
+                    <input type="text" placeholder="Nombre Completo" id="nombre" maxlength="20">
+                    <input type="date" id="fecha">
+                    <input type="text" placeholder="Cvv" id="cvv" maxlength="3">
+                    <button class="button">Pagar</button>
+                </form>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <script src="main.js"></script>
+    <script src="pantallaDePago.js"></script>
+</body>
+
+</html>
