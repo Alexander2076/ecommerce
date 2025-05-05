@@ -434,7 +434,7 @@ body {
 .delante {
     background-color: #48e;
     color: white;
-    background-image: url("../img/bg-tarjeta/bg-tarjeta-05.jpg");
+    background-image: url("img/bg-tarjeta/bg-tarjeta-05.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -447,7 +447,7 @@ body {
     background-color: white;
     color: #333;
     transform: rotateY(180deg);
-    background-image: url("../img/bg-tarjeta/bg-tarjeta-05.jpg");
+    background-image: url("img/bg-tarjeta/bg-tarjeta-05.jpg");
     background-size: cover;
     background-position: center;
 
